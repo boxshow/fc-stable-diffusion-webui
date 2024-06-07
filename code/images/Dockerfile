@@ -202,7 +202,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     ffmpeg libglfw3-dev libgles2-mesa-dev pkg-config libcairo2 libcairo2-dev \
     libpython3.9-dev gcc g++ procps unzip curl
 
-ENV SHA=v1.6.0
+ENV SHA=v1.5.1
 RUN git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git /stable-diffusion-webui && \
     cd stable-diffusion-webui && \
     git reset --hard ${SHA}    
